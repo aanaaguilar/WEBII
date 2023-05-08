@@ -1,0 +1,22 @@
+%ref {
+    color: grey;
+    text-decoration: none;
+}
+
+a {
+    @extend %ref;
+}
+
+header > a {
+    background: white;
+    @extend %ref;
+    letter-spacing: calc(.325vw - 1vw/10);
+}
+
+header > a:not(:last-child) {
+    margin-right: 13.5px;
+}
+
+header > h1, header > p, header > a:first-of-type {
+    margin-left: 30px;
+}

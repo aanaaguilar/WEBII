@@ -1,0 +1,13 @@
+h1 {
+    letter-spacing: calc(2.05vw - 1vw/10);
+    display: inline-block;
+}
+
+h2, h3, h4, h5, h6 {
+    letter-spacing: 0.89vw;
+}
+
+h1 + p {
+    font-weight: lighter;
+    letter-spacing: calc(.99vw - 1vw/10);
+}
