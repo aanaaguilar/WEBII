@@ -1,0 +1,33 @@
+@mixin maxwidth($size: 70%) {
+    max-width: $size;
+  }
+
+header {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+main {
+    @include maxwidth;
+    position: relative;
+    margin: auto;
+    margin-top: calc(470px - 15vw);
+    box-shadow: 0px 15px 10px -15px #000;
+}
+
+footer {
+    margin: 30px auto 30px auto;
+}
+
+main > p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.datos {
+    @include maxwidth;
+}
